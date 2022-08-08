@@ -1,0 +1,113 @@
+.slide-show-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+}
+
+.img-slide-show-container {
+    width: 100%;
+    height: 95%;
+}
+
+.img-slide-show {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-show-previous-button {
+    display: flex;
+    background: rgba(0, 0, 0, 0.39);
+    ;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.89);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    transition: .2s;
+}
+
+.slide-show-next-button {
+    display: flex;
+    background: rgba(0, 0, 0, 0.39);
+    ;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border: 2px solid rgba(255, 255, 255, 0.89);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    transition: .2s;
+}
+
+.previous-button-1 {
+    border: solid rgba(255, 255, 255, 0.89);
+    border-width: 0 2px 2px 0;
+    padding: 7px;
+}
+
+.right {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.left {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.slide-show-next-button:hover,
+.slide-show-previous-button:hover {
+    border: 2px solid rgba(0, 0, 0, 0.39);
+    cursor: pointer;
+}
+
+.flickity-dots-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    background-color: black;
+    justify-items: center;
+    align-items: center;
+}
+
+.flickity-dots-container {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+}
+
+.flickity-dots {
+    background: rgba(0, 0, 0, 0.39);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.623);
+    float: left;
+    margin: 0px 5px 0px 5px;
+    cursor: pointer;
+}
+
+.flickity-dots:hover {
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.current-img {
+    border: 3px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+}
